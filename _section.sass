@@ -1,0 +1,69 @@
+.main
+    width: 70%
+    background: rgba(255, 255, 255, .2)
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    article
+        .thumb
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            align-content: center
+            img
+                width: 100%
+                vertical-align: top
+                padding: 5px
+                margin: 10px 0
+        h1
+            color: darkred
+            text-shadow: 1px 1px 1px snow
+            padding: 5px
+        .subt
+            color: red
+            text-shadow: 1px 1px 1px snow
+            padding: 5px
+        p
+            color: snow
+            text-shadow: 1px 1px 1px black
+            text-align: justify
+            line-height: 27px
+            padding: 5px
+            margin: 10px
+        .videos
+            width: 100%
+            padding: 5px
+            box-shadow: 0 0 10px gold
+            vertical-align: top
+            margin: 10px 0
+            align-items: center
+            justify-content: center
+        .reproductor
+            
+            .music
+                color: snow
+                text-decoration: none
+                animation: rolas infinite 2s alternate
+                padding: 5px 
+                margin: 10px
+                font-size: 20px
+                border-radius: 5px
+                margin: 30px
+                
+                &:hover
+                    color: red
+                    
+                    
+
+                
+@keyframes rolas
+    10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%
+        box-shadow: 0 0 10px snow,
+        0 0 20px red,
+        0 0 50px darkred
+
+    10%, 15%, 60%
+        box-shadow: none

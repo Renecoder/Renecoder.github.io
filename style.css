@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+	background: url(https://como-funciona.com/wp-content/uploads/2019/10/donnas-01a.png);
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3em;
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.contenedor{
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 15px auto;
+	padding: 20px;
+	text-align: center;
+	
+}
+header{
+	width: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	margin: 10px 0;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+}
+header .titulo{
+	font-size: 30px;
+  color: snow;
+  text-shadow: 1px 1px 1px red;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  
+}
+header nav a{
+	color: snow;
+	text-decoration: none;
+	padding: 5px;
+	margin: 10px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+}
+header nav a:hover{
+color: red;
+border-bottom: 1px solid red;
+}
+.main{
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	animation: reproductor infinite 10s alternate;
+	border-radius: 10px;
+}
+
+/*Sombra parpadeante del reproductor*/
+@keyframes reproductor{
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%{
+		box-shadow: 0 0 20px red, 0 0 40px blueviolet, 0 0 60px snow;
+
+	}
+	10%, 15%, 60%{
+		box-shadow: none;
+	}
+}
+
+
+
+.main article .thumb{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+aside {
+	width: 39%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	background: rgba(255, 255, 255, 0.2);
+	margin-left: 5px;
+  }
+  
+  aside .lista-rock li {
+	list-style: circle;
+	line-height: 20px;
+	margin: 10px;
+	align-items: center;
+  }
+  
+  aside .lista-rock li a {
+	color: snow;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px black;
+	text-decoration: none;
+	padding: 5px;
+	text-align: justify;
+  }
+  
+  aside .lista-rock li a:hover {
+	color: red;
+	text-shadow: 1px 1px 1px;
+	border-bottom: 1px solid red;
+	padding: 5px;
+  }
+
+  /*Aqui empiezan los estilos del reproducto*/
+#playList{
+	background: snow;
+	border-radius: 10px;
+	text-align: left;
+	/*opacity: 0.8;*/
+	color: red;
+	text-shadow: 1px 1px 1px black;
+	
+}
+ li{
+	padding: 10px;
+}
+li:hover, svg:hover {
+	cursor: pointer;
+	/*El color de abajo es para el hover de los botones de cambio de cancion*/
+	color: #00ff00;
+	text-shadow: 1px 1px 1px snow;
+}
+li.active{
+	/*Estos colores son para cambiar el diseño del listado de canciones como el borde*/
+	color: navy;
+	text-shadow: 1px 1px 1px red;
+	border-bottom: 2px solid navy;
+	
+}
+#controls{
+	width: 100%;
+	border: 1px #eee solid;
+	border-radius: 10px;
+	padding: 10px;
+	/*Estos colores y controles son el contenedeor principal del reproductor*/
+	background: rgba(238, 6, 6, .5);
+	opacity: 0.8
+}
+/*Aqui se cambian los colores de botones de cambio de cancion*/
+svg{
+	color: ;
+	opacity: 0.8;
+	
+}
+
+progress{
+	width: 80%;
+	margin: 10px;
+	opacity: 0.5;
+
+}
+
+.timer{
+	width:50%;
+	position: relative;
+	top:10px;
+	left:0px;
+	text-align:left;
+	float:left;
+	color: snow;
+	
+}
+.volumen{
+	width:50%;
+	position: relative;
+	top:10px;
+	right:0px;
+	text-align:right;
+	float:left;
+	color: snow;
+	margin-bottom:20px;
+}
+#currentPlay{
+	color: black;
+	text-shadow: 1px 1px 1px gray;
+}
+h3{
+	color: lightpink;
+	
+	margin:0px;
+}
+
+footer{
+	width: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 15px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+}
+
+footer .autor {
+	font-size: 30px;
+	color: snow;
+	text-shadow: 1px 1px 1px black;
+	margin: 20px;
+	padding: 5px;
+  }
+  
+  footer nav a {
+	text-decoration: none;
+	color: snow;
+	padding: 5px;
+	margin: 10px;
+	font-size: 20px;
+  }
+  
+  footer nav a:hover {
+	color: darkred;
+	border-bottom: 1px solid darkred;
+  }
+
+
+/*Aqui empiezan los estilos responsive*/
+@media screen and (max-width: 650px){
+
+	.main{
+		width: 100%;
+	}
+	aside{
+		flex-direction: row;
+		width: 90%;
+		margin: auto;
+	}
+	#controls{
+		width: 90%;
+		margin: auto;
+		background: yellow;
+	}
+}
+
+@media screen and (max-width: 450px){
+	aside{
+		display: none;
+	}
+	#controls{
+		width: 90%;
+		padding: 5px;
+		background: #00ff00;
+	}
+}

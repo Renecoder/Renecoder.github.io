@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  background: url(https://como-funciona.com/wp-content/uploads/2019/10/donnas-01a.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+/*Aqui terminan los estilos principlaes*/
+header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .titulo {
+  font-size: 30px;
+  color: snow;
+  text-shadow: 1px 1px 1px red;
+  margin: 20px;
+  padding: 10px;
+}
+
+header nav .btn-inicio {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+  color: snow;
+  text-shadow: 1px 1px 1px red;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+header nav .btn-inicio:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.main {
+  width: 70%;
+  background: rgba(255, 255, 255, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main article .thumb {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main article .thumb img {
+  width: 100%;
+  vertical-align: top;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.main article h1 {
+  color: darkred;
+  text-shadow: 1px 1px 1px snow;
+  padding: 5px;
+}
+
+.main article .subt {
+  color: red;
+  text-shadow: 1px 1px 1px snow;
+  padding: 5px;
+}
+
+.main article p {
+  color: snow;
+  text-shadow: 1px 1px 1px black;
+  text-align: justify;
+  line-height: 27px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.main article .videos {
+  width: 100%;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 10px gold;
+          box-shadow: 0 0 10px gold;
+  vertical-align: top;
+  margin: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main article .reproductor .music {
+  color: snow;
+  text-decoration: none;
+  -webkit-animation: rolas infinite 2s alternate;
+          animation: rolas infinite 2s alternate;
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 30px;
+}
+
+.main article .reproductor .music:hover {
+  color: red;
+}
+
+@-webkit-keyframes rolas {
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    -webkit-box-shadow: 0 0 10px snow, 0 0 20px red, 0 0 50px darkred;
+            box-shadow: 0 0 10px snow, 0 0 20px red, 0 0 50px darkred;
+  }
+  10%, 15%, 60% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes rolas {
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    -webkit-box-shadow: 0 0 10px snow, 0 0 20px red, 0 0 50px darkred;
+            box-shadow: 0 0 10px snow, 0 0 20px red, 0 0 50px darkred;
+  }
+  10%, 15%, 60% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+aside {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+aside .lista-rock li {
+  list-style: circle;
+  line-height: 20px;
+  margin: 10px;
+}
+
+aside .lista-rock li a {
+  color: snow;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+aside .lista-rock li a:hover {
+  color: red;
+  text-shadow: 1px 1px 1px;
+  border-bottom: 1px solid red;
+  padding: 5px;
+}
+
+footer {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .autor {
+  font-size: 30px;
+  color: snow;
+  text-shadow: 1px 1px 1px black;
+  margin: 20px;
+  padding: 5px;
+}
+
+footer nav .btn-red {
+  text-decoration: none;
+  color: snow;
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+footer nav .btn-red:hover {
+  color: darkred;
+  border-bottom: 1px solid darkred;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/*Aqui empiezan los estilos de la galeria de imagenes*/
+.main2 {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main2 article .container.gallery-container {
+  background: rgba(255, 255, 255, 0.2);
+  color: snow;
+  min-height: 100vh;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.main2 article .container.gallery-container h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+}
+
+.main2 article .container.gallery-container p.page-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 25px auto;
+  color: deeppink;
+  text-shadow: 1px 1px 1px snow;
+  font-size: 18px;
+}
+
+.main2 article .container.gallery-container .tz-gallery {
+  padding: 40px;
+}
+
+.main2 article .container.gallery-container .tz-gallery .lightbox img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.main2 article .container.gallery-container .tz-gallery .lightbox img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+/*# sourceMappingURL=estilos-principal.css.map */
